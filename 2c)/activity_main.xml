@@ -1,0 +1,99 @@
+xml version=1.0 encoding=utf-8
+TableLayout xmlnsandroid=httpschemas.android.comapkresandroid
+    androidlayout_width=fill_parent
+    androidlayout_height=fill_parent
+    TableRow
+        EditText
+            androidid=@+idusername
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidinputType=textPersonName
+            androidhint=Username 
+
+        EditText
+            androidid=@+idpassword
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidhint=Password
+            androidinputType=textPassword 
+    TableRow
+    TableRow
+        EditText
+            androidid=@+idaddress
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidhint=Address
+            androidinputType=textPostalAddress 
+        EditText
+            androidid=@+idageNumeric
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidhint=Age
+            androidinputType=number 
+    TableRow
+    TableRow
+        TextView
+            androidid=@+idgender
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidtext=Gender 
+
+        RadioGroup
+            androidid=@+idradioGroup
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidorientation=horizontal
+
+            RadioButton androidid=@+idmale
+                androidlayout_width=wrap_content
+                androidlayout_height=wrap_content
+                androidtext=male
+
+            RadioButton androidid=@+idfemale
+                androidlayout_width=wrap_content
+                androidlayout_height=wrap_content
+                androidtext=female
+        RadioGroup
+    TableRow
+    TableRow
+        TextView
+            androidid=@+iddate
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidtext=Date of Birth 
+
+        DatePicker
+            androidid=@+iddatePicker
+            androidlayout_width=wrap_content
+            androidlayout_height=100dp
+            androiddatePickerMode=spinner
+            androidcalendarViewShown=false
+    TableRow
+    TableRow
+        TextView
+            androidid=@+idtextView10
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidtext=State 
+
+        Spinner
+            androidid=@+idstate_spinner
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidspinnerMode=dropdown 
+    TableRow
+
+
+    TableRow
+        androidlayout_width=fill_parent
+        androidlayout_height=fill_parent
+
+        Button
+            androidid=@+idsubmit
+            androidlayout_width=match_parent
+            androidlayout_height=wrap_content
+            androidonClick=onSubmitBtn
+            androidtext=Submit
+    TableRow
+
+TableLayout
